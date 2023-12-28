@@ -5,5 +5,9 @@ calcularPromedioNotas = function(){
     let promedio;
     promedio = calcularPromedio(valorNota1,valorNota2,valorNota3).toFixed(2);
     cambiarTexto("lblPromedio", promedio);
-
+    if(promedio >=7){
+        cambiarImagen("imgNotas","./images/bien.gif");
+    } else {
+        cambiarImagen("imgNotas", "./images/bad.gif");
+    }
 };
